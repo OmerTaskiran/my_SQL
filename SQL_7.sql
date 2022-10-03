@@ -8,7 +8,7 @@ select 5*5
 
 end
 
--- aşağıdaki şekillerde çalıştırılabiliyor.
+-- aÃ¾aÃ°Ã½daki Ã¾ekillerde Ã§alÃ½Ã¾tÃ½rÃ½labiliyor.
 
 execute sp_sapleproc1
 
@@ -25,7 +25,7 @@ print 'Clarusway'
 
 end
 
---- bu şekilde print ile yapınca mesaj gibi görüyor. Aynı procedre üzerine yazabiliyoruz. Bir öncekini siliyor.
+--- bu Ã¾ekilde print ile yapÃ½nca mesaj gibi gÃ¶rÃ¼yor. AynÃ½ procedre Ã¼zerine yazabiliyoruz. Bir Ã¶ncekini siliyor.
 
 exec sp_sampleproc2
 
@@ -125,7 +125,7 @@ SET @RESULT =@V1 * @V2
 
 SELECT @RESULT AS RESULT
 
---- PRİNT @RESULT
+--- PRÃNT @RESULT
 -----------------------------------
 
 .............
@@ -169,10 +169,10 @@ ELSE
 -----------------
 
 
---iki değişken tanımlayın
---1. değişken ikincisinden büyük ise iki değişkeni toplayın
---2. değişken birincisinden büyük ise 2. değişkenden 1. değişkeni çıkarın
---1. değişken 2. değişkene eşit ise iki değişkeni çarpın
+--iki deÃ°iÃ¾ken tanÃ½mlayÃ½n
+--1. deÃ°iÃ¾ken ikincisinden bÃ¼yÃ¼k ise iki deÃ°iÃ¾keni toplayÃ½n
+--2. deÃ°iÃ¾ken birincisinden bÃ¼yÃ¼k ise 2. deÃ°iÃ¾kenden 1. deÃ°iÃ¾keni Ã§Ã½karÃ½n
+--1. deÃ°iÃ¾ken 2. deÃ°iÃ¾kene eÃ¾it ise iki deÃ°iÃ¾keni Ã§arpÃ½n
 
 
 DECLARE @V1 INT = 5
@@ -189,9 +189,9 @@ ELSE
 	-----------
 
 
---istenilen tarihte verilen sipariş sayısı 5 ' ten küçükse 'lower than 5'
---5 ile 10 arasındaysa sipariş sayısı (kaç ise sayı)
---10' dan büyük ise 'upper than 10' yazdıran bir sorgu yazınız.
+--istenilen tarihte verilen sipariÃ¾ sayÃ½sÃ½ 5 ' ten kÃ¼Ã§Ã¼kse 'lower than 5'
+--5 ile 10 arasÃ½ndaysa sipariÃ¾ sayÃ½sÃ½ (kaÃ§ ise sayÃ½)
+--10' dan bÃ¼yÃ¼k ise 'upper than 10' yazdÃ½ran bir sorgu yazÃ½nÃ½z.
 DECLARE @DAY DATE
 DECLARE @CNTORDER INT
 SET @DAY = '2022-10-03'
@@ -276,7 +276,7 @@ FROM ORDER_TBL
 
 --Table Valued Functions
 
---View den farklı değişken girebiliyoruz.
+--View den farklÃ½ deÃ°iÃ¾ken girebiliyoruz.
 
 CCREATE FUNCTION fn_order_tbl()
 RETURNS TABLE
